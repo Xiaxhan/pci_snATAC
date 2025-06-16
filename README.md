@@ -5,12 +5,12 @@ This repository contains scripts used in Han et al. (2025) for analyzing single-
 All scripts were developed and tested under the following environments: R v4.2.2 and Python v3.9.7.
 
 All dependencies can be installed using `BiocManager::install()` in R and pip in python.
+
+Example: install ArchR and other dependencies
 ```
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-```
-Example: install ArchR and other dependencies
-```
+
 BiocManager::install(c("ArchR", "Seurat", "limma", "enrichR", ...))  # Add more as needed
 ```
 Each section below corresponds to major analysis steps in the manuscript. Scripts are organized by number for clarity.
